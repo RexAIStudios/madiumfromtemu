@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madium - Bargain Reads</title>
+  <style>
+    :root {
+      --primary-orange: #ff4700;
+      --bg-dark: #121212;
+      --card-bg: #1e1e1e;
+      --text-main: #ffffff;
+      --text-muted: #a0a0a0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary-orange);
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(255, 71, 0, 0.5);
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+
+    .grid-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      border: 1px solid #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(255, 71, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-align: center;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .download-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 12px 0;
+      background-color: var(--primary-orange);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #e03e00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Madium</h1>
+    <p>Read like a billionaire (for $0.99)</p>
+  </header>
+
+  <main class="grid-container">
+
+    <article class="card">
+      <img src="https://picsum.photos/300/180?random=1" alt="Article Preview 1">
+      <h2>How to Code in 3 Seconds</h2>
+      <p>Why spend years learning when you can just copy-paste from questionable sources?</p>
+      <a href="https://example.com" class="download-btn" target="_blank" rel="noopener">Download Article</a>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/300/180?random=2" alt="Article Preview 2">
+      <h2>10 Secret Life Hacks</h2>
+      <p>Discover weirdly cheap tricks that sound completely fake but actually kind of work.</p>
+      <a href="https://example.com" class="download-btn" target="_blank" rel="noopener">Download Article</a>
+    </article>
+
+  </main>
+
+</body>
+</html>
